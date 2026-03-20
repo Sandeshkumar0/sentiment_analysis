@@ -1,0 +1,36 @@
+﻿[project]
+name = "sentiment-analysis-webapp"
+version = "1.0.0"
+description = "Single-folder Streamlit Sentiment Analysis app"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "datasets>=2.19.0",
+    "nltk>=3.8.1",
+    "scikit-learn>=1.4.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "joblib>=1.4.0",
+    "streamlit>=1.37.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.29.0",
+    "ipywidgets>=8.1.0",
+]
+
+[tool.uv]
+
+[tool.uv.sources]
+
+[project.scripts]
+start-streamlit = "streamlit run app.py"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
